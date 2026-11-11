@@ -1,2 +1,5 @@
 # TVZ-Dissertation
-This repository contains all the code from the first half of my dissertation at the UEA titled, ‘ Benchmarking Deep-Learning and Waveform-Migration Seismic Detection Tools for Automated Earthquake Catalogue Generation in the Taupō Volcanic Zone, New Zealand’, where I created 3 earthquake catalogues using EQTransformer, PhaseNet and QuakeMigrate
+This repository contains all the code from the first half of my dissertation at the UEA titled, ‘ Benchmarking Deep-Learning and Waveform-Migration Seismic Detection Tools for Automated Earthquake Catalogue Generation in the Taupō Volcanic Zone, New Zealand’, where I created 3 earthquake catalogues using EQTransformer, PhaseNet and QuakeMigrate.
+The files supplied in this repository should be used through an HPC, and followed using the ‘Progress Log’ file, which gives a full 20-week run-down of the first half of my dissertation and how I created the 3 automated earthquake catalogues.
+The full published findings of a 2-month unrest period in the TVZ in 2019 is also available in this repository under the title ‘TVZ Dissertation Full PDF’.
+The results from the second half of my dissertation, where I worked with Howden to create industry-standard Nat Cat data for the TVZ (EP curves, loss tables, etc.), is also included under the title of ‘Data from Howden’s TigerEye PDF’.
