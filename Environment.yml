@@ -1,0 +1,24 @@
+name: tvz-seismic
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - jupyter
+  - ipykernel
+  - obspy=1.4.2
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - eqcorrscan=0.5.2    # from conda-forge — has C extensions, pip build is unreliable (see eqcorrscan docs)
+  - gmt=6.*             # underlying compiled GMT library that pygmt wraps — must come from conda, not pip
+  - pygmt=0.17.0        # from conda-forge, not pip — pip's pygmt can't find libgmt.so without this
+  - netcdf4              # for reading the Chow et al. (2022) velocity model NetCDF files
+  - pip:
+      - seisbench==0.10.2
+      - pyocto==0.1.9
+      - git+https://github.com/wayneweiqiang/GaMMA.git   # GaMMA (AI4EPS) — not on PyPI, installs from source; Python import name is 'gamma'
+      - quakemigrate==1.2.0
+      - mpi4py             # optional, for parallelised ObsPy bulk downloads
